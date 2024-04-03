@@ -8,17 +8,55 @@
                 background-repeat: no-repeat;}
             body {text-align: center;}
             div {background-color: beige; color: blue; stroke:blue;}
+            .groom-img{
+                animation: fade 3s both;
+                animation-timeline: view();
+            }
+
+            .bride-img{
+                animation: fade 3s both;
+                animation-timeline: view();
+            }
+
+
+            @keyframes fade {
+                from{
+                opacity: 0%;
+                }
+
+                to{
+                opacity : 100%;
+                }
+            }
+            header{
+                padding: 15px;
+                text-align: center;
+                background-color: aliceblue;
+                font-family: cursive;
+                color: black;
+            }
+            .mail{text-align: left;}
+            .mobile{text-align: right;}
+
+        
+            footer{
+                padding: 10px;
+                font-size: large;
+                background-color: bisque;}
         </style>
+        
 
     </head>
     <body>
+        <header><h1 id="brandname">Udaya Live events</h1>        
+            <h3 id="mail">eventlive06@gmail.com      &nbsp;  &nbsp; &nbsp;  &nbsp; +1 334-557-4361</h3></header>
         <h3 style="text-align: center;">Thank you for coming here</h3>
         <img src="Poster1.jpeg", width="400", height="500" >
-        <h3 style="text-align: center;">We welcome you to the engagement ceremony of our beautiful couple</h3>
+        <h3 style="text-align: center;">We welcome you to the marriage ceremony of our beautiful couple</h3>
         <i><h1 style="text-align: center; color: blue;">NVS Sai with Durga Bhavani</h1></i>
-        <img src ="Sai1.jpeg", width="300", height="450">
+        <img src ="Sai1.jpeg", width="300", height="450" class="groom-img">
         <p><i><b>Venkata Satya Sai <br> s/o Nimmala Venkata Prasad - Lakshmi</b></i></p><br><br><br>
-        <img src="Durga.jpeg", width="300", height="450">
+        <img src="Durga.jpeg", width="300", height="450" class="bride-img">
         <p><i><b>Durga Bhavani <br> d/o Athuluri Ramu - Vijaya</b></i></p>
         <br>
         <br>
@@ -26,7 +64,7 @@
 
         <div> <strong> The live broadcast of the marriage is yet to start. Comeback later</strong></div>
         <br><br>
-        
+        <video width="320" height="240" controls><source src="Invitation.m4v"></video><br><br><br>
         <br>
         <!--<p>Please try refreshing the page, if you are unable to watch live</p><br><br>-->
         <!--<h4>HIGHLIGHTS</h4>
@@ -44,5 +82,7 @@
         <br><br><br><br>
     </body>
 
-
+<footer>
+   <p>&copy; 2024 &nbsp; &nbsp;<i>Raviteja Pola</i></p> 
+</footer>
     </html>
